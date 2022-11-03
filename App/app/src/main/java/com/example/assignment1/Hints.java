@@ -13,14 +13,8 @@ public class Hints extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hints);
+        getSupportActionBar().setTitle("");
 
-        ImageButton BackButton = findViewById(R.id.imageButton_BackHints);
-        BackButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Hints.this, CarGame.class);
-                startActivity(intent);
-            }
-        });
+
     }
 }

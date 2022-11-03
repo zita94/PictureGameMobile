@@ -24,16 +24,7 @@ public class IdentifyBrand extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_identify_brand);
-
-        ImageButton BackButton = findViewById(R.id.imageButton_BackIDBrand);
-        BackButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(IdentifyBrand.this, CarGame.class);
-                startActivity(intent);
-            }
-        });
-
+        getSupportActionBar().setTitle("");
 
     }
 }

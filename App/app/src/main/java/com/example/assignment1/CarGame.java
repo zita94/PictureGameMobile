@@ -14,15 +14,7 @@ public class CarGame extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_car_game);
-
-        ImageButton BackButton = findViewById(R.id.imageButton_BackCarGame);
-        BackButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(CarGame.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
+        getSupportActionBar().setTitle("");
 
         Button IdentifyBrand = findViewById(R.id.button_IdentifyBrand);
         IdentifyBrand.setOnClickListener(new View.OnClickListener() {

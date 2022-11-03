@@ -25,14 +25,6 @@ public class About extends AppCompatActivity {
         AboutTextView.setTextSize(18);
         AboutTextView.setPadding(15,0,15,0);
         AboutTextView.setClickable(false);
-
-        ImageButton BackButton = findViewById(R.id.imageButton_BackAbout);
-        BackButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(About.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
+        getSupportActionBar().setTitle("");
     }
 }
