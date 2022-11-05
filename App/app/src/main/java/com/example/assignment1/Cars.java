@@ -14,15 +14,15 @@ public class Cars {
 
     public Cars(){
         cars = new ArrayList<>();
-        populateCarList();
+        populateCarList(cars);
     }
 
     //populates the cars list with the 100 cars (10 of each brand)
-    private void populateCarList() {
+    public static void populateCarList(ArrayList<Car> list) {
         for (String brand : BRANDS){
-            for(int i = 1; i < 11; i++){
-                String filePath = Environment.getExternalStorageDirectory().getPath()+ "/images/" + brand + "/" + "(" + i + ").jpg";
-                cars.add(new Car(brand, filePath));
+            for(int i = 1; i <= 10; i++){
+                String filePath = Environment.getExternalStorageDirectory().getPath()+ "/images/" + brand + "/" + brand + " (" + i + ").jpg";
+                list.add(new Car(brand, filePath));
             }
         }
     }
@@ -30,7 +30,7 @@ public class Cars {
     //gets a random car from the cars list, removing it from the list then automatically repopulates the list of cars when it's empty
     public Car getRandomCar(){
         if (cars.size() == 0) {
-            populateCarList();
+            populateCarList(cars);
         }
 
         Random rand = new Random();

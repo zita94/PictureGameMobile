@@ -12,7 +12,9 @@
         android:theme="@style/Theme.Assignment1">
         <activity
             android:name=".AdvancedLevel"
-            android:exported="false">
+            android:exported="false"
+            android:screenOrientation="portrait">
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -20,7 +22,8 @@
         <activity
             android:name=".IdentifyCar"
             android:parentActivityName=".CarGame"
-            android:exported="false">
+            android:exported="false"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -28,7 +31,8 @@
         <activity
             android:name=".IdentifyBrand"
             android:parentActivityName=".CarGame"
-            android:exported="false">
+            android:exported="false"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -36,7 +40,8 @@
         <activity
             android:name=".Hints"
             android:parentActivityName=".CarGame"
-            android:exported="false">
+            android:exported="false"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -44,7 +49,8 @@
         <activity
             android:name=".CarGame"
             android:parentActivityName=".MainActivity"
-            android:exported="false">
+            android:exported="false"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -52,14 +58,16 @@
         <activity
             android:name=".About"
             android:parentActivityName=".MainActivity"
-            android:exported="false">
+            android:exported="false"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
