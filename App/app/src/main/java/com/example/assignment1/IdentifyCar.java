@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -81,46 +82,8 @@ public class IdentifyCar extends AppCompatActivity {
             tvResult.setText("");
             ShowCars();
             imageClicked = false;
-        }
-    }
-
-    @Override
-    protected void onSaveInstanceState(@NonNull Bundle outState) {
-        super.onSaveInstanceState(outState);
-        try {
-            outState.putString("filePath0", uniqueCar.get(0).getFilePath());
-            outState.putString("brand0", uniqueCar.get(0).getBrand());
-            outState.putString("filePath1", uniqueCar.get(1).getFilePath());
-            outState.putString("brand1", uniqueCar.get(1).getBrand());
-            outState.putString("filePath2", uniqueCar.get(2).getFilePath());
-            outState.putString("brand2", uniqueCar.get(2).getBrand());
-        } catch (Exception e) {
-            outState.putAll(savedState);
-            Log.e("Error: ", e.toString());
-        }
-
-        outState.putString("tvCorrectBrand", tvCarBrand.getText().toString());
-        outState.putString("result", tvResult.getText().toString());
-    }
-
-    @Override
-    protected void onRestoreInstanceState(@NonNull Bundle savedInstance) {
-        super.onRestoreInstanceState(savedInstance);
-        ivCar1.setImageBitmap(BitmapFactory.decodeFile(savedInstance.getString("filePath0")));
-        ivCar1.setTag(savedInstance.getString("brand0"));
-        ivCar2.setImageBitmap(BitmapFactory.decodeFile(savedInstance.getString("filePath1")));
-        ivCar2.setTag(savedInstance.getString("brand1"));
-        ivCar3.setImageBitmap(BitmapFactory.decodeFile(savedInstance.getString("filePath2")));
-        ivCar3.setTag(savedInstance.getString("brand2"));
-
-        strCorrectBrand = savedInstance.getString("tvCorrectBrand");
-        tvResult.setText(savedInstance.getString("result"));
-
-        tvResult.setText(savedInstance.get("result").toString());
-        if (tvResult.getText().equals(getString(R.string.correct))) {
-            tvResult.setTextColor(Color.GREEN);
         } else {
-            tvResult.setTextColor(Color.RED);
+            Toast.makeText(this, "Please click an image", Toast.LENGTH_SHORT).show();
         }
     }
 }

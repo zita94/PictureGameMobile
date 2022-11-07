@@ -10,7 +10,7 @@ public class Cars {
     private final ArrayList<Car> cars;
     //list of car brands
     public static final String[] BRANDS = new String[] {"Audi", "Bentley", "BMW", "Fiat", "Ford",
-            "Honda", "Hyundai", "Jaguar", "Mercedes-Benz", "Toyota"};
+            "Honda", "Hyundai", "Jaguar", "Mercedes", "Toyota"};
 
     public Cars(){
         cars = new ArrayList<>();

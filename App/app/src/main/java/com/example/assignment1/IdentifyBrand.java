@@ -89,47 +89,47 @@ public class IdentifyBrand extends AppCompatActivity {
     }
 
     //saves state
-    @Override
-    protected void onSaveInstanceState(@NonNull Bundle outState){
-        super.onSaveInstanceState(outState);
-
-        try{
-            if(btnSubmit.getText().toString().equals(getString(R.string.next))){
-                outState.putString("result", tvAnswer.getText().toString());
-            }
-            outState.putString("strCorrectAnswer", strCorrectAnswer);
-            outState.putString("filePath", car.getFilePath());
-            outState.putString("brand", car.getBrand());
-            outState.putString("button", btnSubmit.getText().toString());
-        } catch (Exception e) {
-            //if car doesn't exist, exception is thrown, restores state
-            outState.putAll(state);
-            outState.putString("strCorrectAnswer", strCorrectAnswer);
-        }
-    }
-
-    //restores saved state
-    @Override
-    protected void onRestoreInstanceState(@NonNull Bundle savedState){
-        super.onRestoreInstanceState(savedState);
-
-        Bitmap bitmap = BitmapFactory.decodeFile(savedState.getString("filepath"));
-        ivCar.setImageBitmap(bitmap);
-        btnSubmit.setText(savedState.getString("button"));
-        strCorrectAnswer = savedState.getString("strCorrectAnswer");
-
-        if(state.containsKey("result")){
-            String strResult = savedState.getString("result");
-            tvCorrectA.setText(strResult);
-
-            if(strResult.equals("Correct")){
-                tvCorrectA.setTextColor(Color.GREEN);
-            }else{
-                tvCorrectA.setTextColor(Color.RED);
-            }
-
-            tvAnswer.setText(strCorrectAnswer);
-            btnSubmit.setText("Next");
-        }
-    }
+//    @Override
+//    protected void onSaveInstanceState(@NonNull Bundle outState){
+//        super.onSaveInstanceState(outState);
+//
+//        try{
+//            if(btnSubmit.getText().toString().equals(getString(R.string.next))){
+//                outState.putString("result", tvAnswer.getText().toString());
+//            }
+//            outState.putString("strCorrectAnswer", strCorrectAnswer);
+//            outState.putString("filePath", car.getFilePath());
+//            outState.putString("brand", car.getBrand());
+//            outState.putString("button", btnSubmit.getText().toString());
+//        } catch (Exception e) {
+//            //if car doesn't exist, exception is thrown, restores state
+//            outState.putAll(state);
+//            outState.putString("strCorrectAnswer", strCorrectAnswer);
+//        }
+//    }
+//
+//    //restores saved state
+//    @Override
+//    protected void onRestoreInstanceState(@NonNull Bundle savedState){
+//        super.onRestoreInstanceState(savedState);
+//
+//        Bitmap bitmap = BitmapFactory.decodeFile(savedState.getString("filepath"));
+//        ivCar.setImageBitmap(bitmap);
+//        btnSubmit.setText(savedState.getString("button"));
+//        strCorrectAnswer = savedState.getString("strCorrectAnswer");
+//
+//        if(state.containsKey("result")){
+//            String strResult = savedState.getString("result");
+//            tvCorrectA.setText(strResult);
+//
+//            if(strResult.equals("Correct")){
+//                tvCorrectA.setTextColor(Color.GREEN);
+//            }else{
+//                tvCorrectA.setTextColor(Color.RED);
+//            }
+//
+//            tvAnswer.setText(strCorrectAnswer);
+//            btnSubmit.setText("Next");
+//        }
+//    }
 }

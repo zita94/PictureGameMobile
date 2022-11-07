@@ -10,15 +10,13 @@
         android:id="@+id/textView_AdHint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView_IDCar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.03" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView_AdCar"
@@ -52,7 +50,7 @@
         android:layout_marginTop="20dp"
         android:contentDescription="@string/car_image"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintHorizontal_bias="0.053"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView_AdCar2"
         tools:ignore="ImageContrastCheck"
@@ -139,5 +137,51 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_AdResult" />
+
+    <TextView
+        android:id="@+id/textView_AdCar0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toEndOf="@+id/imageView_AdCar"
+        app:layout_constraintTop_toBottomOf="@+id/text_Car" />
+
+    <TextView
+        android:id="@+id/textView_AdCar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView_AdCar2"
+        app:layout_constraintTop_toBottomOf="@+id/text_Car2" />
+
+    <TextView
+        android:id="@+id/textView_AdCar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView_AdCar3"
+        app:layout_constraintTop_toBottomOf="@+id/text_Car3" />
+
+    <TextView
+        android:id="@+id/textView_AdScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="45dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_Car"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_AdHint"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

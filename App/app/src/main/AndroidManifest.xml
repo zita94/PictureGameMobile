@@ -12,6 +12,7 @@
         android:theme="@style/Theme.Assignment1">
         <activity
             android:name=".AdvancedLevel"
+            android:parentActivityName=".CarGame"
             android:exported="false"
             android:screenOrientation="portrait">
 
@@ -48,15 +49,6 @@
         </activity>
         <activity
             android:name=".CarGame"
-            android:parentActivityName=".MainActivity"
-            android:exported="false"
-            android:screenOrientation="portrait">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".About"
             android:parentActivityName=".MainActivity"
             android:exported="false"
             android:screenOrientation="portrait">

@@ -9,49 +9,48 @@
     <Button
         android:id="@+id/button_IdentifyBrand"
         android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="195dp"
         android:text="Identify the Brand"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.20" />
-
-    <Button
-        android:id="@+id/button_Hints"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:text="hints"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_IdentifyBrand"
-        app:layout_constraintVertical_bias="0.15" />
-
-    <Button
-        android:id="@+id/button_IdentifyCar"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:text="Identify the Car"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_Hints"
-        app:layout_constraintVertical_bias="0.15" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button_Advanced"
         android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="112dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="195dp"
         android:text="Advanced Level"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_IdentifyCar"
-        app:layout_constraintVertical_bias="0.15" />
+        app:layout_constraintVertical_bias="0.004" />
+
+    <Button
+        android:id="@+id/button_IdentifyCar"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:text="Identify the Car"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_Hints" />
+
+    <Button
+        android:id="@+id/button_Hints"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:text="hints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_IdentifyBrand" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
