@@ -34,4 +34,5 @@ Enter the name of each brand of car shown. A running score is kept as the user p
 <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/56891175/272123684-73d1849d-5cff-4b83-b046-5bd3ab820d43.png">
 
 ##
+Final Grade: 92  
 COM594 Advanced Mobile Technology Assignment 1
