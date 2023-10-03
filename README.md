@@ -10,25 +10,25 @@ The main activity where the user can select 1 of 4 games to play
 <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/56891175/272123343-584c13be-04ce-4603-9891-69832bd24ddf.png">
 
 ##
-Identify the brand activity:
+Identify the brand activity:  
 Given an image of a car, select the matching brand from the dropdown. 
 
 <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/56891175/272123367-e4e1b02a-5362-41c8-b50f-3a7b63fe7a94.png">
 
 ##
-Hints activity
+Hints activity:  
 Hangman-style game where you guess the brand from the image.
 
 <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/56891175/272123409-37437591-2947-4ad0-bd6a-78dfb859fe1b.png">
 
 ##
-Identify the car activity
+Identify the car activity:  
 Given a brand, select which 1 of 3 car images matches the brand.
 
 <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/56891175/272123609-274c4acb-7b96-408a-820e-6cccb40bfbf2.png">
 
 ##
-Advanced activity
+Advanced activity:  
 Enter the name of each brand of car shown. A running score is kept as the user progresses.
 
 <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/56891175/272123684-73d1849d-5cff-4b83-b046-5bd3ab820d43.png">
